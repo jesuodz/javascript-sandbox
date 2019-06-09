@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>First html document</title>
+  <script src="../lib/d3/d3.min.js"></script>
+</head>
+<body>
+  <svg id="dataviz_area" height=200 width=450></svg>
+</body>
+<script>
+  let svg = d3.select("#dataviz_area");
+
+  svg.append("circle")
+    .attr("cx", 40).attr("cy", 40).attr("r", 40).style("fill", "blue");
+  svg.append("circle")
+    .attr("cx", 160).attr("cy", 90).attr("r", 40).style("fill", "red");
+  svg.append("circle")
+    .attr("cx", 410).attr("cy", 160).attr("r", 40).style("fill", "green");
+</script>
+</html>
